@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #e2e2e2;
+    }
+
+    .container {
+        display: flex;
+        margin-top: 10%;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .sign-up-content {
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        gap: 20px;
+        padding: 30px;
+    }
+
+    input {
+        height: 40px;
+        border: 0;
+        border-radius: 15px;
+        background-color: #e2e2e2;
+        padding: 0 20px;
+        font-size: 16px;
+    }
+
+    button {
+        height: 40px;
+        border: 0;
+        border-radius: 15px;
+        background-color: #005e86;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #005e86;
+    }
+
+    a {
+        color: #005e86;
+        text-decoration: none;
+    }
+    .display {
+        display: flex;
+        gap: 60px;
+    }
+    .btn {
+        width: 200px;
+    }
+    .cl {
+        width: 300px;
+        height: 60px;
+        background-color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 20px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div id="authForm" class="display">
+            <div class="sign-up-content" id="registrationSection">
+                <h1>Зарегистрируйтесь</h1>
+                <input type="text" placeholder="name" id="registerUsername" required>
+                <input type="email" placeholder="email" id="registermail" required>
+                <input type="password" placeholder="password" id="registerPassword" required>
+                <button type="submit" id="registerButton">Регистрация</button>
+                <p id="registerMsg"></p>
+            </div>
+
+            <div class="sign-up-content" id="loginSection">
+                <h1>Авторизируйтесь</h1>
+                <input type="text" id="loginUsername" placeholder="name">
+                <input type="password" id="loginPassword" placeholder="password">
+                <button type="submit" id="loginButton">Авторизация</button>
+                <p id="loginMsg"></p>
+            </div>
+            <div class="cl">
+               <button id="logoutButton" class="btn">Выйти</button> 
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
